@@ -27,12 +27,12 @@ app.use(limiter);
 
 
 // Database Connection
-let URI="mongodb://localhost:27017/studentAdmission";
+let URI="mongodb+srv://sabbir:YN9XTFvLxvqyJ4tz@ostad.ck0s9gc.mongodb.net/studentAdmission";
 let OPTION={user:'',pass:'',autoIndex:true};
 mongoose.connect(URI,OPTION).then((res)=>{
     console.log("Database Connected 🚀")
 }).catch((err)=>{
-    console.log(err)
+    console.log('database not connected', err)
 })
 
 
